@@ -232,6 +232,6 @@ smartresolve-ai/
 
 ---
 
-**Author**: Navya Shree  
+**Author**: Navya D A  
 **Role**: Junior AI Research Associate Candidate  
 **Challenge**: Rooman AI Challenge (HireAI)
