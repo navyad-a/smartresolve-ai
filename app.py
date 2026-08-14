@@ -5,6 +5,7 @@ Autonomous Support Ticket Triage and Routing Agent.
 
 import os
 import io
+import csv
 import time
 import pandas as pd
 import streamlit as st
@@ -12,6 +13,28 @@ import streamlit as st
 from src.models import TicketInput, CategoryEnum, UrgencyEnum, TeamEnum
 from src.agent import SupportTicketAgent
 from src.router import CONFIDENCE_THRESHOLD
+
+
+def load_csv_safely(file_or_path):
+    """Safely loads a CSV into a pandas DataFrame with fallback handling."""
+    try:
+        if isinstance(file_or_path, str):
+            return pd.read_csv(file_or_path)
+        return pd.read_csv(file_or_path)
+    except Exception:
+        rows = []
+        if isinstance(file_or_path, str):
+            with open(file_or_path, mode="r", encoding="utf-8", errors="ignore") as f:
+                reader = csv.DictReader(f)
+                for r in reader:
+                    rows.append(r)
+        else:
+            file_or_path.seek(0)
+            content = file_or_path.getvalue().decode("utf-8", errors="ignore")
+            reader = csv.DictReader(io.StringIO(content))
+            for r in reader:
+                rows.append(r)
+        return pd.DataFrame(rows)
 
 # Configure Page
 st.set_page_config(
@@ -261,11 +284,11 @@ with tab2:
 
     df_to_process = None
     if uploaded_file is not None:
-        df_to_process = pd.read_csv(uploaded_file)
+        df_to_process = load_csv_safely(uploaded_file)
     elif use_default or "batch_df" in st.session_state:
         default_path = os.path.join(os.path.dirname(__file__), "data", "sample_tickets.csv")
         if os.path.exists(default_path):
-            df_to_process = pd.read_csv(default_path)
+            df_to_process = load_csv_safely(default_path)
             st.session_state["batch_df"] = df_to_process
 
     if df_to_process is not None:
@@ -353,7 +376,7 @@ with tab3:
 
     sample_csv_path = os.path.join(os.path.dirname(__file__), "data", "sample_tickets.csv")
     if os.path.exists(sample_csv_path):
-        sample_df = pd.read_csv(sample_csv_path)
+        sample_df = load_csv_safely(sample_csv_path)
         test_tickets = [
             TicketInput(
                 ticket_id=str(row["ticket_id"]),

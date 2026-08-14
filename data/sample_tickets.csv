@@ -1,26 +1,26 @@
 ticket_id,subject,body,customer_tier
-T001,Double charged on recent invoice,I was billed twice on my credit card for the monthly Pro subscription ($49 x 2). Please refund the extra transaction immediately.,Pro
-T002,Production API returning 500 internal server error,Our production application has been unable to reach your API endpoints since 10am. All calls return HTTP 500 error and our users are blocked.,Enterprise
-T003,Locked out of account and reset link expired,I have forgotten my password and when I request a password reset email the link says expired immediately upon clicking.,Standard
-T004,Suspicious login from Russia detected on my account,I received an automated security notification that someone logged in from Moscow IP address at 3am. I live in Mumbai and did not authorize this.,Enterprise
-T005,Package marked delivered but not received,My order #89214 was marked as delivered yesterday by the courier but there is no package at my door or mailroom.,Standard
-T006,Dark mode request for dashboard,Would love to have a dark mode option in the analytics dashboard. Working late at night with white background strains eyes.,Standard
-T007,General business inquiry,Hello, I would like to know if your platform complies with HIPAA and GDPR requirements for enterprise healthcare clients.,Enterprise
-T008,Payment failed but money deducted from bank,My bank account shows Rs 3500 debited via UPI but your checkout screen showed transaction failed and order was not created.,Standard
-T009,Critical database connection pool exhaustion,Our application servers are crashing due to timeout connecting to the managed Postgres instance. Max connections reached.,Enterprise
-T010,Need to change registered email address,My company domain changed from @oldcompany.com to @newcompany.com. How can I migrate my admin account ownership?,Pro
-T011,Potential SQL injection vulnerability in search bar,Our penetration testing team found that passing single quotes into the user search query triggers raw database error messages.,Enterprise
-T012,Damaged item received in shipment,The package arrived today but the glass enclosure inside was shattered into pieces. Order ID #99210.,Standard
-T013,CSV export missing timestamp column,When downloading the monthly report in CSV format the timestamp column is completely blank for records after July 1st.,Pro
-T014,Pricing discount for annual non-profit plan,We are a registered 501c3 non-profit organization. Do you offer special non-profit discounts or educational grants?,Standard
-T015,Help,Something isn't working please fix it asap.,Standard
-T016,Update credit card on file,My corporate card expired last week. Need instructions on where to upload the new Mastercard details before renewal.,Pro
-T017,Webhooks not firing on payment.success event,We configured webhook endpoint https://api.client.com/webhooks but no POST events are arriving when customers complete checkout.,Enterprise
-T018,2FA code not arriving via SMS,I am trying to sign in from a new laptop but the 6-digit SMS verification code never arrives on my phone.,Standard
-T019,Unusual spike in API token usage,We noticed millions of requests generated from an API key that was supposed to be restricted to internal staging. Suspect key leakage.,Enterprise
-T020,Wrong item shipped in parcel,I ordered size Large blue jacket but received size Small red shirt in parcel #44321.,Standard
-T021,Keyboard shortcuts for power users,It would be great to navigate between tabs using cmd+k or j/k hotkeys similar to Superhuman.,Pro
-T022,Can I speak to a representative?,I need to discuss enterprise SLA terms with someone from your sales or partnerships division.,Enterprise
-T023,Request VAT tax invoice for fiscal year,Please provide official European VAT compliant tax invoice for transactions from Jan to Dec 2025.,Pro
-T024,Latency spike on US-East region,Response times on us-east-1 have degraded from 45ms to over 2200ms in the last 45 minutes.,Enterprise
-T025,Issue with access or billing maybe,I am not sure if my card was charged or if my login is disabled because I cannot see my workspace.,Standard
+T001,Double charged on recent invoice,"I was billed twice on my credit card for the monthly Pro subscription ($49 x 2). Please refund the extra transaction immediately.",Pro
+T002,Production API returning 500 internal server error,"Our production application has been unable to reach your API endpoints since 10am. All calls return HTTP 500 error and our users are blocked.",Enterprise
+T003,Locked out of account and reset link expired,"I have forgotten my password and when I request a password reset email the link says expired immediately upon clicking.",Standard
+T004,Suspicious login from Russia detected on my account,"I received an automated security notification that someone logged in from Moscow IP address at 3am. I live in Mumbai and did not authorize this.",Enterprise
+T005,Package marked delivered but not received,"My order #89214 was marked as delivered yesterday by the courier but there is no package at my door or mailroom.",Standard
+T006,Dark mode request for dashboard,"Would love to have a dark mode option in the analytics dashboard. Working late at night with white background strains eyes.",Standard
+T007,General business inquiry,"Hello, I would like to know if your platform complies with HIPAA and GDPR requirements for enterprise healthcare clients.",Enterprise
+T008,Payment failed but money deducted from bank,"My bank account shows Rs 3500 debited via UPI but your checkout screen showed transaction failed and order was not created.",Standard
+T009,Critical database connection pool exhaustion,"Our application servers are crashing due to timeout connecting to the managed Postgres instance. Max connections reached.",Enterprise
+T010,Need to change registered email address,"My company domain changed from @oldcompany.com to @newcompany.com. How can I migrate my admin account ownership?",Pro
+T011,Potential SQL injection vulnerability in search bar,"Our penetration testing team found that passing single quotes into the user search query triggers raw database error messages.",Enterprise
+T012,Damaged item received in shipment,"The package arrived today but the glass enclosure inside was shattered into pieces. Order ID #99210.",Standard
+T013,CSV export missing timestamp column,"When downloading the monthly report in CSV format the timestamp column is completely blank for records after July 1st.",Pro
+T014,Pricing discount for annual non-profit plan,"We are a registered 501c3 non-profit organization. Do you offer special non-profit discounts or educational grants?",Standard
+T015,Help,"Something isn't working please fix it asap.",Standard
+T016,Update credit card on file,"My corporate card expired last week. Need instructions on where to upload the new Mastercard details before renewal.",Pro
+T017,Webhooks not firing on payment.success event,"We configured webhook endpoint https://api.client.com/webhooks but no POST events are arriving when customers complete checkout.",Enterprise
+T018,2FA code not arriving via SMS,"I am trying to sign in from a new laptop but the 6-digit SMS verification code never arrives on my phone.",Standard
+T019,Unusual spike in API token usage,"We noticed millions of requests generated from an API key that was supposed to be restricted to internal staging. Suspect key leakage.",Enterprise
+T020,Wrong item shipped in parcel,"I ordered size Large blue jacket but received size Small red shirt in parcel #44321.",Standard
+T021,Keyboard shortcuts for power users,"It would be great to navigate between tabs using cmd+k or j/k hotkeys similar to Superhuman.",Pro
+T022,Can I speak to a representative?,"I need to discuss enterprise SLA terms with someone from your sales or partnerships division.",Enterprise
+T023,Request VAT tax invoice for fiscal year,"Please provide official European VAT compliant tax invoice for transactions from Jan to Dec 2025.",Pro
+T024,Latency spike on US-East region,"Response times on us-east-1 have degraded from 45ms to over 2200ms in the last 45 minutes.",Enterprise
+T025,Issue with access or billing maybe,"I am not sure if my card was charged or if my login is disabled because I cannot see my workspace.",Standard
